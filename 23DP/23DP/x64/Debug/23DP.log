@@ -1,0 +1,60 @@
+﻿  test_case_client.cpp
+d:\code\cpp\23_design_patterns\23dp\src\props.h(3): error C2011: 'TestCaseProps': 'enum' type redefinition
+  d:\code\cpp\23_design_patterns\23dp\include\props.h(3): note: see declaration of 'TestCaseProps'
+d:\code\cpp\23_design_patterns\23dp\src\props.h(11): error C2011: 'ProcessProps': 'enum' type redefinition
+  d:\code\cpp\23_design_patterns\23dp\include\props.h(11): note: see declaration of 'ProcessProps'
+d:\code\cpp\23_design_patterns\23dp\include\manufacture_interface.h(5): error C2011: 'ManufactureInterface': 'class' type redefinition
+  d:\code\cpp\23_design_patterns\23dp\src\manufacture_interface.h(5): note: see declaration of 'ManufactureInterface'
+d:\code\cpp\23_design_patterns\23dp\include\codetest.h(8): error C2504: 'ManufactureInterface': base class undefined
+d:\code\cpp\23_design_patterns\23dp\include\codetest.h(13): error C3668: 'CodeTest::SetFunc': method with override specifier 'override' did not override any base class methods
+d:\code\cpp\23_design_patterns\23dp\include\codetest.h(14): error C3668: 'CodeTest::GetFunc': method with override specifier 'override' did not override any base class methods
+d:\code\cpp\23_design_patterns\23dp\include\codetest.h(15): error C3668: 'CodeTest::Process': method with override specifier 'override' did not override any base class methods
+d:\code\cpp\23_design_patterns\23dp\src\test_case_client.cpp(29): error C2679: binary '=': no operator found which takes a right-hand operand of type 'std::unique_ptr<CodeTest,std::default_delete<_Ty>>' (or there is no acceptable conversion)
+          with
+          [
+              _Ty=CodeTest
+          ]
+  d:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1436): note: could be 'std::unique_ptr<ManufactureInterface,std::default_delete<_Ty>> &std::unique_ptr<_Ty,std::default_delete<_Ty>>::operator =(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)'
+          with
+          [
+              _Ty=ManufactureInterface
+          ]
+  d:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1377): note: or       'std::unique_ptr<ManufactureInterface,std::default_delete<_Ty>> &std::unique_ptr<_Ty,std::default_delete<_Ty>>::operator =(std::unique_ptr<_Ty,std::default_delete<_Ty>> &&) noexcept'
+          with
+          [
+              _Ty=ManufactureInterface
+          ]
+  d:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1303): note: or       'std::unique_ptr<ManufactureInterface,std::default_delete<_Ty>> &std::unique_ptr<_Ty,std::default_delete<_Ty>>::operator =(std::nullptr_t) noexcept'
+          with
+          [
+              _Ty=ManufactureInterface
+          ]
+  d:\code\cpp\23_design_patterns\23dp\src\test_case_client.cpp(29): note: while trying to match the argument list '(std::unique_ptr<ManufactureInterface,std::default_delete<_Ty>>, std::unique_ptr<CodeTest,std::default_delete<_Ty>>)'
+          with
+          [
+              _Ty=ManufactureInterface
+          ]
+          and
+          [
+              _Ty=CodeTest
+          ]
+d:\code\cpp\23_design_patterns\23dp\src\test_case_client.cpp(42): error C2027: use of undefined type 'ManufactureInterface'
+  d:\code\cpp\23_design_patterns\23dp\src\manufacture_interface.h(5): note: see declaration of 'ManufactureInterface'
+d:\code\cpp\23_design_patterns\23dp\src\test_case_client.cpp(42): error C2039: 'Process': is not a member of 'std::unique_ptr<ManufactureInterface,std::default_delete<_Ty>>'
+          with
+          [
+              _Ty=ManufactureInterface
+          ]
+  d:\code\cpp\23_design_patterns\23dp\src\test_case_client.h(18): note: see declaration of 'std::unique_ptr<ManufactureInterface,std::default_delete<_Ty>>'
+          with
+          [
+              _Ty=ManufactureInterface
+          ]
+d:\code\cpp\23_design_patterns\23dp\src\test_case_client.cpp(42): error C2027: use of undefined type 'ProcessProps'
+  d:\code\cpp\23_design_patterns\23dp\include\props.h(11): note: see declaration of 'ProcessProps'
+  main.cpp
+d:\code\cpp\23_design_patterns\23dp\src\props.h(3): error C2011: 'TestCaseProps': 'enum' type redefinition
+  d:\code\cpp\23_design_patterns\23dp\include\props.h(3): note: see declaration of 'TestCaseProps'
+d:\code\cpp\23_design_patterns\23dp\src\props.h(11): error C2011: 'ProcessProps': 'enum' type redefinition
+  d:\code\cpp\23_design_patterns\23dp\include\props.h(11): note: see declaration of 'ProcessProps'
+  Generating Code...
