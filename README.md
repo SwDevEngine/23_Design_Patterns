@@ -1,2 +1,1 @@
-# 23_Design_Patterns
-this prj testing only
+this prj testing cpp code only
